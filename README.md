@@ -10,13 +10,15 @@ Sorry if anything here it wrong, some of it prob is xD
 
 ### Starting Tips
 
-Still working this out...
-
 For when the game first starts with  `goods at start == normal`:
 
 ![](assets/start-resources.jpg)
 
 The opening to the game is probably the most crucial part. How quickly can you capture important land with mines and get food/weapons/coins operating? The more efficient you can be in the opening the larger your advantage when you meet your first enemy on the map.
+
+This is also the most subjective part and deffs is more about how you like to play / what works for you. This is just some general things I like to do at the start of a new game.
+
+Still working on my strategy here.... tbc
 
 ### Building Layout (GRID)
 
@@ -87,7 +89,7 @@ Not sure how valuable this is when you have a grid layout with roads that are al
 
 ### Moving Soldiers and Workers
 
-You can move solders / workers / donkey's / etc between HQ and Storehouses with the `take out of store` command. I think this did not work in S2 Gold? But works in RTTR. Useful for moving soldiers / workers between storehouses to get soldiers to frontline sooner etc. There has to be a storehouse within a certain range for them to move to or this will not work.
+You can move solders / workers / donkey's / etc between HQ and Storehouses with the `take out of store` command. I think this did not work in S2 Gold? But works in RTTR. Useful for moving soldiers / workers between storehouses to get soldiers to frontline sooner etc. There has to be a storehouse within a certain range (how far?) for them to move to or this will not work.
 
 ## Military
 
@@ -102,14 +104,14 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 | ![](assets/military-sliders/5.png) | Interior             | This is for plain white flag buildings (No enemy nearby).                                |
 | ![](assets/military-sliders/6.png) | Center of Country    | This is for half flag buildings (Kinda near enemy but not really).                       |
 | ![](assets/military-sliders/7.png) | Near Harbour Points  | Dunno, I have never changed this.                                                        |
-| ![](assets/military-sliders/8.png) | Border Areas         | This is for full flag buildings (bordering enemy territory).                             |
+| ![](assets/military-sliders/8.png) | Border Areas         | This is for full flag buildings (bordering enemy territory). Change from max at your own risk xD                                                                                                                                                     |
 
 ### Soldier Strength
 
 > [!WARNING]
 > I am fairly sure this is wrong. The HP calculations are correct. But Stronger Solders may also have a damage bonus or other things? I feel like a general is more than 2.33x a private right???.
 > It looks like only HP based on the military consts file in the RTTR source code - https://github.com/Return-To-The-Roots/s25client/blob/master/libs/s25main/gameData/MilitaryConsts.h
-> Something to pay attention to I guess
+> .... IDK maybe this is right???
 
 * Soldier strength is determined entirely by their HP (I THINK). 
 * Each promotion adds 1 HP. 
@@ -128,11 +130,23 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 
 ### Efficient Gold Coin Usage
 
-+1 for bad usage. +4 for best usage
+* Military Strength is measured by total HP of all soldiers.
+* A poorly used coin will increase military strength by 1.
+* An optimally used coin will increase military strength by 4.
+* To ensure you can get +4 on all coins used you should:
+    * Have a Fortress (or watchtower) near mint(s).
+    * Set the Military Slider for Weak/Strong defense to 0%.
+    * Max out the soldiers in the fortress by setting military slider Interior to max (or appropriate one for fortress position).
+    * Allow coins only to this fortress.
+    * When a soldier is promoted to a General drop the interior setting the number of steps == to generals in fortress.
+    * That amount of generals will leave the fortress (generals leave not privates due to weak/strong defence set to 0%).
+    * Once generals have left the fortress increase the interior slider back to 100% and the weakest soldiers from the nearest storehouse will replace the generals.
+* Using this method means you can make optimal use of Gold Coins without having to cycle all soldiers from buildings leaving you with a temporary vulnerability.
+* Video of this in action... Rinse and repeat until all Privates are Generals.
 
 ![](assets/coin-usage.gif)
 
-### Destroying Redundant Buildings
+### Destroying Redundant Military Buildings
 
 If you are careful about it you can destroy military buildings used to expand once their territory control overlaps. This gives you soldiers back into your main army.
 
