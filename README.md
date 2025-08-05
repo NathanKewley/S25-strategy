@@ -4,6 +4,8 @@
 
 My take on general strategies and tips for Settlers 2 (RTTR). Mainly things I don't feel are super obvious and are never explained by the game.
 
+Sorry if anything here it wrong, some of it prob is xD
+
 ## General
 
 ### Starting Tips
@@ -37,7 +39,7 @@ The only one I change at the start of a game is food distribution. I like to swi
 
 ![](assets/distribution-food.png)
 
-* There is no option to set priority for stone. My observation is that stone will prioritize catapult ammo over construction. Breaking roads to Catapults is the only way to prioritize construction afaik.
+There is no option to set priority for stone. My observation is that stone will prioritize catapult ammo over construction. Breaking roads to Catapults is the only way to prioritize construction afaik.
 
 ### Metalworks / Making Tools
 
@@ -79,6 +81,17 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 ## Military
 
 ### Military Sliders
+
+| Slider                             | Name                 | Usage / Strategy                                                                         |
+| ---------------------------------- | -------------------- | ---------------------------------------------------------------------------------------- |
+| ![](assets/military-sliders/1.png) | More/Less Recruits   | Dunno, I have never changed this.                                                        |
+| ![](assets/military-sliders/2.png) | Weak/Strong Defense  | Determine what strength soldiers will leave storage to occupy military buildings. Also determines which soldiers will leave a military building to meet enemy attackers on the field. This slider is important for optimal coin usage explained later.         |
+| ![](assets/military-sliders/3.png) | Fewer/More Defenders | Dunno, I have never changed this.                                                        |
+| ![](assets/military-sliders/4.png) | Less/More Attackers  | This is super important, I always max it out. Means you can attack even from a barracks. This does however allow you to attack to the point of only have 1 solder left in a building making it vulnerable for capture / catapult destruction.                      |
+| ![](assets/military-sliders/5.png) | Interior             | This is for plain white flag buildings (No enemy nearby).                                |
+| ![](assets/military-sliders/6.png) | Center of Country    | This is for half flag buildings (Kinda near enemy but not really).                       |
+| ![](assets/military-sliders/7.png) | Near Harbour Points  | Dunno, I have never changed this.                                                        |
+| ![](assets/military-sliders/8.png) | Border Areas         | This is for full flag buildings (bordering enemy territory).                             |
 
 <!-- ### Defender Strengths
 
@@ -125,7 +138,7 @@ If you are careful about it you can destroy military buildings used to expand on
 
 ### Buildings
 
-Appendix of buildings and some misc tips. Mostly here because I always have to look up what tools diff building require.
+Mostly here because I always have to look up what tools diff building require.
 
 | Building      | Size   | Build    | Worker     | Tool | Requires     | Produces | Ratios                         | Other Tips |
 | ------------- | ------ | ---------| ---------- | ---- | ------------ | -------- | ------------------------------ | ---------- |
