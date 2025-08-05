@@ -82,8 +82,6 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 
 ### Efficient Gold Coin Usage
 
-https://github.com/user-attachments/assets/ced8b0d7-5857-4e1f-bc19-0d582335b892
-
 +1 for bad usage. +4 for best usage
 
 ### Destroying Redundant Buildings
@@ -104,4 +102,5 @@ Appendix of buildings and some misc tips. Mostly here because I always have to l
 | ---------- | ----- | ----------| ---------- | ---- | ------------------ | ------------------ | ------------------------------ | ---------- |
 | Woodcutter | Small | 2xW, 0xS  | Woodcutter | Axe  | Nearby Trees       | Logs               | 2x for each Sawmill + Forester | N/A        |
 | TBC    | | | | | | | |
+
 
