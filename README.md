@@ -68,7 +68,18 @@ This is especially noticeable on ship maps, where allocated resources could be i
 
 ### Food Production
 
+* Fish are absolutely the best source of food in the game. They are cheap and quick to get. Early game if you have access to water, get as much fish production as you can. This can get your mines working well and delay the need to invest in more costly food production.
+* Hunters are the second best source of food in the game for the same reason as fishery's. Forests will spawn animals, so if you have land you wont be using, build a forester to create a forest, so you can have a hunter constantly running there.
+* Next up is Bakery's. This is much more costly to get running as you need expensive and large buildings. However it is an infinite source of food.
+* Last up if pigs. This ranks slightly below Bread as the required buildings are slightly more expensive to build. This is also an infinite source of food.
+* Ideally you want to have both bakery's and Pig Farms operating so you are creating infinite bread and meat. This is due to mines only being able to take 2 of each food type at a time, this means providing multiple types of food will make it easier to have mines running efficiently.
+
 ### Building placements
+
+This plays into the resource allocations and available resource slots in a buildings as well. The main 2 recommendations here are:
+
+* For Bread production. Build mills, farms and wells wherever you have ok land. Mills have 6 slots for wheat so long travel times are ok. Build you bakery's as close to your mines as possible (even blow them up and relocate them as your mines exhaust and move). Bakery can be far from well and mill as it have 6 slots for flour and water. But should be near mines as they only have 2 slots for bread.
+* For Meat / Slaughterhouse. The same is true, where the farm, pig farm and well can be wherever land is available. But the slaughterhouse itself should be as close as possible to your mines.
 
 ### Donkey Breeder
 
