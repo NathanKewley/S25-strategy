@@ -84,6 +84,8 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 
 +1 for bad usage. +4 for best usage
 
+![](assets/coin-usage.gif)
+
 ### Destroying Redundant Buildings
 
 ## Misc
@@ -102,5 +104,3 @@ Appendix of buildings and some misc tips. Mostly here because I always have to l
 | ---------- | ----- | ----------| ---------- | ---- | ------------------ | ------------------ | ------------------------------ | ---------- |
 | Woodcutter | Small | 2xW, 0xS  | Woodcutter | Axe  | Nearby Trees       | Logs               | 2x for each Sawmill + Forester | N/A        |
 | TBC    | | | | | | | |
-
-
