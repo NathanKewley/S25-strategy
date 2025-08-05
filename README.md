@@ -18,7 +18,13 @@ The opening to the game is probably the most crucial part. How quickly can you c
 
 This is also the most subjective part and deffs is more about how you like to play / what works for you. This is just some general things I like to do at the start of a new game.
 
-Still working on my strategy here.... tbc
+Still working on my strategy here.... tbc but general thoughts
+
+* 3 Sawmills seems to be ideal (this means 6 woodcutters + 3 foresters).
+* You can delay building a quarry initially as starting stone is quite adequate.
+* Initial expansions should be via barracks as they build quicker and only required 2 wood.
+* Prioritize fishery's as primary source of food initially.
+* Don't commit to many buildings to construction, keep an eye on resources and build as you have free resources so you can have better control of the order of construction.
 
 ### Building Layout (GRID)
 
@@ -133,7 +139,7 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 * Military Strength is measured by total HP of all soldiers.
 * A poorly used coin will increase military strength by 1.
 * An optimally used coin will increase military strength by 4.
-* To ensure you can get +4 on all coins used you should:
+* To ensure you can get +4 on coins used you should:
     * Have a Fortress (or watchtower) near mint(s).
     * Set the Military Slider for Weak/Strong defense to 0%.
     * Max out the soldiers in the fortress by setting military slider Interior to max (or appropriate one for fortress position).
