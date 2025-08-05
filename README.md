@@ -10,13 +10,13 @@ Sorry if anything here it wrong, some of it prob is xD
 
 ### Starting Tips
 
+Still working this out...
+
 For when the game first starts with  `goods at start == normal`:
 
 ![](assets/start-resources.jpg)
 
-* 1
-* 2
-* 3
+The opening to the game is probably the most crucial part. How quickly can you capture important land with mines and get food/weapons/coins operating? The more efficient you can be in the opening the larger your advantage when you meet your first enemy on the map.
 
 ### Building Layout (GRID)
 
@@ -93,18 +93,15 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 | ![](assets/military-sliders/7.png) | Near Harbour Points  | Dunno, I have never changed this.                                                        |
 | ![](assets/military-sliders/8.png) | Border Areas         | This is for full flag buildings (bordering enemy territory).                             |
 
-<!-- ### Defender Strengths
-
-### More Attackers
-
-### Soldier Allocations -->
-
 ### Soldier Strength
+
+> [!WARNING]
+> I am fairly sure this is wrong. The HP calculations are correct. But Stronger Solders may also have a damage bonus or other things? I feel like a general is more than 2.33x a private right???.
 
 * Soldier strength is determined entirely by their HP (I THINK). 
 * Each promotion adds 1 HP. 
 * A General is 2.33x stronger than a Private (I THINK).
-* Soldiers DO NO heal immediately when re-entering a building (They did in S2 Gold AFAIK). They take time to heal in RTTR (idk how long).
+* Soldiers DO NOT heal immediately when re-entering a building (They did in S2 Gold AFAIK). They take time to heal in RTTR (idk how long).
 
 | Rank                | HP | vs Private |  
 | ------------------- | -- | ---------- |
@@ -138,7 +135,7 @@ If you are careful about it you can destroy military buildings used to expand on
 
 ### Buildings
 
-Mostly here because I always have to look up what tools diff building require.
+Mostly here because I always have to look up what tools diff building require. To be completed...
 
 | Building      | Size   | Build    | Worker     | Tool | Requires     | Produces | Ratios                         | Other Tips |
 | ------------- | ------ | ---------| ---------- | ---- | ------------ | -------- | ------------------------------ | ---------- |
@@ -152,3 +149,4 @@ Mostly here because I always have to look up what tools diff building require.
 | Lookout Tower | Small  | 4xW      | | | | | |
 | Well          | Small  | 2xW      | | | | | |
 | ----          | Medium | | | | | | |
+| ----          | Large | | | | | | |
