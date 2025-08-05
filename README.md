@@ -1,5 +1,7 @@
 # S25 Strategy
 
+(This page has some large gif's that may take some time to load... idk what the better way to embed here is).
+
 My take on general strategies and tips for Settlers 2 (RTTR). Mainly things I don't feel are super obvious and are never explained by the game.
 
 ## General
@@ -49,7 +51,18 @@ If you watch the resources in the Metalworks, the second resources are consumed,
 
 This refers to the way resources are allocated to buildings. If a resource is in transit to a building it is considered allocated. This means the resource slot in the building is accounted for and will not have additional resources allocated. This is prob best explained via example:
 
-* 
+* Lets say you have a Coal Mine with no bread. Mines can take 2 bread.
+* Your HQ is far away from your mine but has lots of spare bread.
+* Bread is taken out of your HQ and allocated to bread slot 1 in your mine.
+* Bread is taken out of your HQ and allocated to bread slot 2 in your mine.
+* 2 Bread is on roads and in transit to your Coal Mine.
+* Your bakery which is next to your Coal Mine produces a piece of bread.
+* Rather then send this bread to the coal mine, it is sent to the storage in the HQ as both the empty bread slots in the Coal Mine are already allocated to bread in transit.
+* This means your Coal Mine is sitting idle longer than it needs to be. A storehouse near the bakery/Coal Mine would boost your economy's efficiency.
+
+This is unlikely to matter on smaller maps. But good to be aware off. If you have for instance lots of bread, but your mines are unable to run at 100% it is probably because of this. Creating a storehouse near the mines and re-directing spare bread to that storehouse solves this.
+
+This is especially noticeable on ship maps, where allocated resources could be in transit on a ship for minutes at a time.
 
 ### Food Production
 
@@ -114,15 +127,15 @@ If you are careful about it you can destroy military buildings used to expand on
 
 Appendix of buildings and some misc tips. Mostly here because I always have to look up what tools diff building require.
 
-| Building      | Size   | To Build  | Worker     | Tool | Resources Required | Resources Produced | Ratios                         | Other Tips |
-| ------------- | ------ | ----------| ---------- | ---- | ------------------ | ------------------ | ------------------------------ | ---------- |
-| Woodcutter    | Small  | 2xW       | Woodcutter | Axe  | Nearby Trees       | Logs               | 2x for each Sawmill + Forester | N/A        |
-| Forester      | Small  | 2xW       | | | | | |
-| Quarry        | Small  | 2xW       | | | | | |
-| Fishery       | Small  | 2xW       | | | | | |
-| Hunter        | Small  | 2xW       | | | | | |
-| Barracks      | Small  | 2xW       | | | | | |
-| Guardhouse    | Small  | 2xW, 3xS  | | | | | |
-| Lookout Tower | Small  | 4xW       | | | | | |
-| Well          | Small  | 2xW       | | | | | |
+| Building      | Size   | Build    | Worker     | Tool | Requires     | Produces | Ratios                         | Other Tips |
+| ------------- | ------ | ---------| ---------- | ---- | ------------ | -------- | ------------------------------ | ---------- |
+| Woodcutter    | Small  | 2xW      | Woodcutter | Axe  | Nearby Trees | Logs     | 2x for each Sawmill + Forester | N/A        |
+| Forester      | Small  | 2xW      | | | | | |
+| Quarry        | Small  | 2xW      | | | | | |
+| Fishery       | Small  | 2xW      | | | | | |
+| Hunter        | Small  | 2xW      | | | | | |
+| Barracks      | Small  | 2xW      | | | | | |
+| Guardhouse    | Small  | 2xW, 3xS | | | | | |
+| Lookout Tower | Small  | 4xW      | | | | | |
+| Well          | Small  | 2xW      | | | | | |
 | ----          | Medium | | | | | | |
