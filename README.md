@@ -35,13 +35,21 @@ The only one I change at the start of a game is food distribution. I like to swi
 
 ![](assets/distribution-food.png)
 
-* There is no option to set priority for stone. My observation is that stone will prioritize catapult ammo over construction. Breaking roads to Catapults is the only way to priorities construction afaik.
-
-### Transport
+* There is no option to set priority for stone. My observation is that stone will prioritize catapult ammo over construction. Breaking roads to Catapults is the only way to prioritize construction afaik.
 
 ### Metalworks / Making Tools
 
+Its good to be very deliberate about what tools you want to make. Only make the exact amount you need as the rest of your iron should be going to making soldiers. Set all tools to 0% production except for the tool you specifically want to make:
+
+![](assets/tools.png)
+
+If you watch the resources in the Metalworks, the second resources are consumed, you can hit `Production == Off` and the Metalworks will complete the current tool then stop working.
+
 ### Resource Allocations
+
+This refers to the way resources are allocated to buildings. If a resource is in transit to a building it is considered allocated. This means the resource slot in the building is accounted for and will not have additional resources allocated. This is prob best explained via example:
+
+* 
 
 ### Food Production
 
@@ -49,9 +57,11 @@ The only one I change at the start of a game is food distribution. I like to swi
 
 ### Donkey Breeder
 
+Not sure how valuable this is when you have a grid layout with roads that are already efficient? For now I am treating this as a mid-late game luxury once I have a steady food supply going.
+
 ### Moving Soldiers and Workers
 
-You can move solders / workers / donkey's / etc between HQ and Storehouses with the `take out of store` command. I think this did not work in S2 Gold? But works in RTTR. Useful for moving soldiers / workers between storehouses to get soldiers to frontline sooner etc.
+You can move solders / workers / donkey's / etc between HQ and Storehouses with the `take out of store` command. I think this did not work in S2 Gold? But works in RTTR. Useful for moving soldiers / workers between storehouses to get soldiers to frontline sooner etc. There has to be a storehouse within a certain range for them to move to or this will not work.
 
 ## Military
 
@@ -88,6 +98,10 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 
 ### Destroying Redundant Buildings
 
+If you are careful about it you can destroy military buildings used to expand once their territory control overlaps. This gives you soldiers back into your main army.
+
+![](assets/destroy-buildings.gif)
+
 ## Misc
 
 * Mines will mine a much larger area around them then I thought.
@@ -100,7 +114,15 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 
 Appendix of buildings and some misc tips. Mostly here because I always have to look up what tools diff building require.
 
-| Building   | Size  | To Build  | Worker     | Tool | Resources Required | Resources Produced | Ratios                         | Other Tips |
-| ---------- | ----- | ----------| ---------- | ---- | ------------------ | ------------------ | ------------------------------ | ---------- |
-| Woodcutter | Small | 2xW, 0xS  | Woodcutter | Axe  | Nearby Trees       | Logs               | 2x for each Sawmill + Forester | N/A        |
-| TBC    | | | | | | | |
+| Building      | Size   | To Build  | Worker     | Tool | Resources Required | Resources Produced | Ratios                         | Other Tips |
+| ------------- | ------ | ----------| ---------- | ---- | ------------------ | ------------------ | ------------------------------ | ---------- |
+| Woodcutter    | Small  | 2xW       | Woodcutter | Axe  | Nearby Trees       | Logs               | 2x for each Sawmill + Forester | N/A        |
+| Forester      | Small  | 2xW       | | | | | |
+| Quarry        | Small  | 2xW       | | | | | |
+| Fishery       | Small  | 2xW       | | | | | |
+| Hunter        | Small  | 2xW       | | | | | |
+| Barracks      | Small  | 2xW       | | | | | |
+| Guardhouse    | Small  | 2xW, 3xS  | | | | | |
+| Lookout Tower | Small  | 4xW       | | | | | |
+| Well          | Small  | 2xW       | | | | | |
+| ----          | Medium | | | | | | |
