@@ -60,23 +60,6 @@ If you watch the resources in the Metalworks, the second resources are consumed,
 
 ### Resource Allocations
 
-#### How Resources are allocated between buildings
-
-This refers to how a resource is prioritized between buildings requiring the same resource (where there is no difference under distribution of goods). This seems to work based on order of building construction request. I suspect internally there is a stack / list of building that is appended to when a new building is placed for construction. When a resource is being allocated and there are multiple buildings with same priority for allocation the first building in the list will get the allocation.
-
-I have done some testing on this behavior. Examples of behavior observed.
-
-Scenario 1:
-
-* You have 0 wood left in stock.
-* you have sawmills producing wood.
-* You have placed 10 buildings for construction.
-* When a sawmill produces wood that wood will be allocated to the building ordered for construction FIRST.
-* Once that building has the required wood allocated the building ordered for construction NEXT will be allocated the wood.
-* There are instances where if you have multiple sawmills, SAWMILL 1 may allocate wood to FIRST building and SAWMILL 2 will allocate to SECOND building. But multiple can allocate to FIRST if the building required lots of wood like a watchtower etc.
-* There seems to be very occasional instances where a military building can skip the queue and be prioritized, this seems to happen at random??
-* If you break the road to building FIRST, then no wood will be allocated and wood will go to SECOND. However if you reconnect the road to FIRST when SECOND has half its wood allocated, wood will start to priorities FIRST again. This means the order is based on the time the building is placed for construction, NOT the time a building is connected to the road network.
-
 #### How Resource Slots in Buildings Work
 
 This refers to the way resources are allocated to buildings. If a resource is in transit to a building it is considered allocated. This means the resource slot in the building is accounted for and will not have additional resources allocated. This is prob best explained via example:
@@ -93,6 +76,25 @@ This refers to the way resources are allocated to buildings. If a resource is in
 This is unlikely to matter on smaller maps. But good to be aware off. If you have for instance lots of bread, but your mines are unable to run at 100% it is probably because of this. Creating a storehouse near the mines and re-directing spare bread to that storehouse solves this.
 
 This is especially noticeable on ship maps, where allocated resources could be in transit on a ship for minutes at a time.
+
+#### How Resources are allocated For Construction
+
+This refers to how Wood and Stone are prioritized between buildings under construction. This works based on order of building construction request. I suspect internally there is a stack / list of building that is appended to when a new building is placed for construction. When wood or stone is being allocated to construction the first building in the list will get the allocation. Distance between Sawmill/Quarry/HQ and construction site does not matter.
+
+Results of testing:
+
+* You have 0 wood left in stock.
+* you have sawmills producing wood.
+* You have placed 10 buildings for construction.
+* When a sawmill produces wood that wood will be allocated to the building ordered for construction FIRST.
+* Once that building has the required wood allocated the building ordered for construction NEXT will be allocated the wood.
+* There are instances where if you have multiple sawmills, SAWMILL 1 may allocate wood to FIRST building and SAWMILL 2 will allocate to SECOND building. But multiple can allocate to FIRST if the building required lots of wood like a watchtower etc.
+* There seems to be very occasional instances where a military building can skip the queue and be prioritized, this seems to happen at random??
+* If you break the road to building FIRST, then no wood will be allocated and wood will go to SECOND. However if you reconnect the road to FIRST when SECOND has half its wood allocated, wood will start to priorities FIRST again. This means the order is based on the time the building is placed for construction, NOT the time a building is connected to the road network.
+
+#### How Resources are allocated For General Production
+
+This refers to resource allocation to building that are constructed and required goods to operate. This is specifically for instances where multiple buildings need the same resource and have an equal distribution of goods for the required resource. First priority will go to the building with the lowest current allocation (including allocations in transit), if equal allocations between multiple buildings the closest building will be prioritized.
 
 ### Food Production
 
