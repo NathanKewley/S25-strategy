@@ -192,16 +192,16 @@ If you are careful about it you can destroy military buildings used to expand on
 
 Mostly here because I always have to look up what tools diff building require. To be completed...
 
-| Building      | Size   | Build    | Worker     | Tool | Requires     | Produces | Ratios                         | Other Tips |
-| ------------- | ------ | ---------| ---------- | ---- | ------------ | -------- | ------------------------------ | ---------- |
-| Woodcutter    | Small  | 2xW      | Woodcutter | Axe  | Nearby Trees | Logs     | 2x for each Sawmill + Forester | N/A        |
-| Forester      | Small  | 2xW      | | | | | |
-| Quarry        | Small  | 2xW      | | | | | |
-| Fishery       | Small  | 2xW      | | | | | |
-| Hunter        | Small  | 2xW      | | | | | |
-| Barracks      | Small  | 2xW      | | | | | |
-| Guardhouse    | Small  | 2xW, 3xS | | | | | |
-| Lookout Tower | Small  | 4xW      | | | | | |
-| Well          | Small  | 2xW      | | | | | |
-| ----          | Medium | | | | | | |
-| ----          | Large | | | | | | |
+| Building      | Size   | Build    | Worker     | Tool         | Requires         | Produces | Ratios                         | Other Tips                                      |
+| ------------- | ------ | ---------| ---------- | ------------ | ---------------- | -------- | ------------------------------ | ----------------------------------------------- |
+| Woodcutter    | Small  | 2xW      | Woodcutter | Axe          | Nearby Trees     | Logs     | 2x for each Sawmill + Forester | N/A                                             |
+| Forester      | Small  | 2xW      | Ranger     | Shovel       | Nearby Space     | Tree     | 1x per 2 woodcutters           | Making forests will spawn animals for hunters   |
+| Quarry        | Small  | 2xW      | Stonesman  | Pick-axe     | Nearby Stone     | Stone    | N/A                            | N/A                                             |
+| Fishery       | Small  | 2xW      | Fisher     | Rod and Line | Water            | Fish     | N/A                            | Most cost effective food source in the game     |
+| Hunter        | Small  | 2xW      | Huntsman   | Bow          | Animals / Forest | Meat     | 1 hunter per forest            | N/A                                             |
+| Barracks      | Small  | 2xW      | N/A        | N/A          | N/A              | N/A      |                                | Expands border by 7 intersections               |
+| Guardhouse    | Small  | 2xW, 3xS | N/A        | N/A          | N/A              | N/A      |                                | Expands border by 8 intersections               |
+| Lookout Tower | Small  | 4xW      | Scout      | N/A          | N/A              | N/A      | N/A                            | Unable to create more scouts that start with??? |
+| Well          | Small  | 2xW      | N/A        | N/A          | N/A              | Water    | 1 per building requiring water | N/A                                             |
+| ----          | Medium |          |            |              |                  |          |                                |                                                 |
+| ----          | Large | | | | | | | |
