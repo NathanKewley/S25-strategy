@@ -20,9 +20,10 @@ This is also the most subjective part and deffs is more about how you like to pl
 
 Still working on my strategy here.... tbc but general thoughts
 
-* 3 Sawmills seems to be ideal (this means 6 woodcutters + 3 foresters).
-* You can delay building a quarry initially as starting stone is quite adequate.
+* Expanding quickly and getting access to mines is top priority.
 * Initial expansions should be via barracks as they build quicker and only required 2 wood.
+* 3 Sawmills seems to be ideal for small-medium maps
+* You can delay building a quarry initially as starting stone is quite adequate.
 * Prioritize fishery's as primary source of food initially.
 * Don't commit to many buildings to construction, keep an eye on resources and build as you have free resources so you can have better control of the order of construction.
 
@@ -58,6 +59,25 @@ Its good to be very deliberate about what tools you want to make. Only make the 
 If you watch the resources in the Metalworks, the second resources are consumed, you can hit `Production == Off` and the Metalworks will complete the current tool then stop working.
 
 ### Resource Allocations
+
+#### How Resources are allocated between buildings
+
+This refers to how a resource is prioritized between buildings requiring the same resource (where there is no difference under distribution of goods). This seems to work based on order of building construction request. I suspect internally there is a stack / list of building that is appended to when a new building is placed for construction. When a resource is being allocated and there are multiple buildings with same priority for allocation the first building in the list will get the allocation.
+
+I have done some testing on this behavior. Examples of behavior observed.
+
+Scenario 1:
+
+* You have 0 wood left in stock.
+* you have sawmills producing wood.
+* You have placed 10 buildings for construction.
+* When a sawmill produces wood that wood will be allocated to the building ordered for construction FIRST.
+* Once that building has the required wood allocated the building ordered for construction NEXT will be allocated the wood.
+* There are instances where if you have multiple sawmills, SAWMILL 1 may allocate wood to FIRST building and SAWMILL 2 will allocate to SECOND building. But multiple can allocate to FIRST if the building required lots of wood like a watchtower etc.
+* There seems to be very occasional instances where a military building can skip the queue and be prioritized, this seems to happen at random??
+* If you break the road to building FIRST, then no wood will be allocated and wood will go to SECOND. However if you reconnect the road to FIRST when SECOND has half its wood allocated, wood will start to priorities FIRST again. This means the order is based on the time the building is placed for construction, NOT the time a building is connected to the road network.
+
+#### How Resource Slots in Buildings Work
 
 This refers to the way resources are allocated to buildings. If a resource is in transit to a building it is considered allocated. This means the resource slot in the building is accounted for and will not have additional resources allocated. This is prob best explained via example:
 
