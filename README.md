@@ -137,9 +137,7 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 ### Soldier Strength
 
 > [!WARNING]
-> I am fairly sure this is wrong. The HP calculations are correct. But Stronger Solders may also have a damage bonus or other things? I feel like a general is more than 2.33x a private right???.
-> It looks like only HP based on the military consts file in the RTTR source code - https://github.com/Return-To-The-Roots/s25client/blob/master/libs/s25main/gameData/MilitaryConsts.h
-> .... IDK maybe this is right???
+> The sample size of observed battles here is too low to be confident of the data. Only Generals vs Privates has been observed, the remaining has been inferred.
 
 * Soldier strength is based on HP and chance to hit/
 * Each promotion adds 1 HP and an unknown chance to hit.
