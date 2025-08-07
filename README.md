@@ -141,18 +141,31 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 > It looks like only HP based on the military consts file in the RTTR source code - https://github.com/Return-To-The-Roots/s25client/blob/master/libs/s25main/gameData/MilitaryConsts.h
 > .... IDK maybe this is right???
 
-* Soldier strength is determined entirely by their HP (I THINK). 
-* Each promotion adds 1 HP. 
-* A General is 2.33x stronger than a Private (I THINK).
+* Soldier strength is based on HP and chance to hit/
+* Each promotion adds 1 HP and an unknown chance to hit.
+* A General is 7x stronger than a Private (I THINK).
 * Soldiers DO NOT heal immediately when re-entering a building (They did in S2 Gold AFAIK). They take time to heal in RTTR (idk how long).
 
-| Rank                | HP | vs Private |  
-| ------------------- | -- | ---------- |
-| Private             | 3  | 1x         |
-| Private First Class | 4  | 1.33x      |
-| Sergeant            | 5  | 1.66x      |
-| Officer             | 6  | 2x         |
-| General             | 7  | 2.33x      |
+Doing some tacking of battles between privates and Generals to check hit rates...
+This is a low sample size and needs more observations. But its better than nothing for now.
+
+| Soldier | Battle 1 | Battle 2 |
+| --------| -------- | -------- |
+| Private | 9        | 9        |
+| General | 27       | 27       |
+
+* This means general hit chance 3x private hit chance.
+* Calculated on HP this means a general has 3x effective HP (EHP).
+
+Assuming a linear increase in hit chance like HP increase is the following table **should** be accurate.
+
+| Rank                | HP | Hit Chance vs Private | EHP vs Private | Strength vs Private |  
+| ------------------- | -- | --------------------- | -------------- | ------------------- |
+| Private             | 3  | 1x                    | 3              | 1x                  |
+| Private First Class | 4  | 1.5x                  | 6              | 2x                  |
+| Sergeant            | 5  | 2x                    | 10             | 3.3x                |
+| Officer             | 6  | 2.5x                  | 15             | 5x                  |
+| General             | 7  | 3x                    | 21             | 7x                  |
 
 ![](assets/soldier-hp.png)
 
