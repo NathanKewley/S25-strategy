@@ -139,13 +139,12 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 > [!WARNING]
 > The sample size of observed battles here is too low to be confident of the data. Only Generals vs Privates has been observed, the remaining has been inferred.
 
-* Soldier strength is based on HP and chance to hit/
-* Each promotion adds 1 HP and an unknown chance to hit.
-* A General is 7x stronger than a Private (I THINK).
+* Soldier strength is based on HP and chance to hit.
+* Each promotion adds 1 HP and 0.5x change to hit.
+* A General is 7x stronger than a Private.
 * Soldiers DO NOT heal immediately when re-entering a building (They did in S2 Gold AFAIK). They take time to heal in RTTR (idk how long).
 
-Doing some tacking of battles between privates and Generals to check hit rates...
-This is a low sample size and needs more observations. But its better than nothing for now.
+Tracking some battles between privates and Generals to work out hit rates gives the following data:
 
 | Soldier | Battle 1 | Battle 2 |
 | --------| -------- | -------- |
