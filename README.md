@@ -123,15 +123,15 @@ You can move solders / workers / donkey's / etc between HQ and Storehouses with 
 
 ### Military Sliders
 
-| Slider                             | Name                 | Usage / Strategy                                                                         |
-| ---------------------------------- | -------------------- | ---------------------------------------------------------------------------------------- |
-| ![](assets/military-sliders/1.png) | More/Less Recruits   | Dunno, I have never changed this.                                                        |
+| Slider                             | Name                 | Usage / Strategy                                                                          |
+| ---------------------------------- | -------------------- | ----------------------------------------------------------------------------------------- |
+| ![](assets/military-sliders/1.png) | More/Less Recruits   | Dunno, I have never changed this.                                                         |
 | ![](assets/military-sliders/2.png) | Weak/Strong Defense  | Determine what strength soldiers will leave storage to occupy military buildings. Also determines which soldiers will leave a military building to meet enemy attackers on the field. This slider is important for optimal coin usage explained later.         |
-| ![](assets/military-sliders/3.png) | Fewer/More Defenders | Dunno, I have never changed this.                                                        |
+| ![](assets/military-sliders/3.png) | Fewer/More Defenders | This determins how many soldiers leave military buildings to meet attackers on the field. |
 | ![](assets/military-sliders/4.png) | Less/More Attackers  | This is super important, I always max it out. Means you can attack even from a barracks. This does however allow you to attack to the point of only have 1 solder left in a building making it vulnerable for capture / catapult destruction.                      |
-| ![](assets/military-sliders/5.png) | Interior             | This is for plain white flag buildings (No enemy nearby).                                |
-| ![](assets/military-sliders/6.png) | Center of Country    | This is for half flag buildings (Kinda near enemy but not really).                       |
-| ![](assets/military-sliders/7.png) | Near Harbour Points  | Dunno, I have never changed this.                                                        |
+| ![](assets/military-sliders/5.png) | Interior             | This is for plain white flag buildings (No enemy nearby).                                 |
+| ![](assets/military-sliders/6.png) | Center of Country    | This is for half flag buildings (Kinda near enemy but not really).                        |
+| ![](assets/military-sliders/7.png) | Near Harbour Points  | Dunno, I have never changed this.                                                         |
 | ![](assets/military-sliders/8.png) | Border Areas         | This is for full flag buildings (bordering enemy territory). Change from max at your own risk xD                                                                                                                                                     |
 
 ### Soldier Strength
